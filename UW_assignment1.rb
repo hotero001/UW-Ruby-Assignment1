@@ -26,7 +26,7 @@ my_reverse("Goodbye Cruel World")
 puts ""
 
 def palindrome?(s)
-	g = s.gsub(/\W+/, "")
+  g = s.gsub(/\W+/, "")
   f = g.downcase
   if f.reverse == f
     puts "true"
@@ -40,17 +40,3 @@ palindrome?("aBba")
 palindrome?("abb")
 palindrome?("Able was I ere I saw elba")
 palindrome?("A man, a plan, a canal, Panama")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
