@@ -2,12 +2,12 @@
 
 def to_sentence(array)
   if array.length == 1
-    puts array
+  	puts array
   elsif array.length > 1
-    last_element = []
-    last_element << array.pop
-    p = array.flatten.join(", ")
-    puts p+" and "+last_element[0].to_s
+  	last_element = []
+  	last_element << array.pop
+  	p = array.flatten.join(", ")
+  	puts p+" and "+last_element[0].to_s
   end
 end
 
@@ -15,12 +15,14 @@ to_sentence([])
 to_sentence(["john"])
 to_sentence(["john", "paul"])
 to_sentence([1, "paul", 3, "ringo"])
+puts "---END OF PROBLEM 1---"
+puts ""
 
 def mean(array)
-  sum = 0
+	sum = 0
   array.each {|i| sum += i}
   the_mean = sum/array.length.to_i
-  puts the_mean
+  puts the_mean.to_f
 end
 
 def median(array)
@@ -30,9 +32,9 @@ def median(array)
     median_pos = number_of_elements.to_i/2
     puts ordered_array[median_pos].to_f
   else array.length % 2 == 0
-    median1 = ordered_array[array.length.to_i/2]
-    median2 = ordered_array[array.length.to_i/2-1]
-    puts (median1.to_f+median2.to_f)/2
+  	median1 = ordered_array[array.length.to_i/2]
+  	median2 = ordered_array[array.length.to_i/2-1]
+  	puts (median1.to_f+median2.to_f)/2
   end
 end
 
@@ -42,6 +44,7 @@ puts ""
 
 median([1, 2, 3])
 median([1, 1, 4])
+puts "---END OF PROBLEM 2---"
 puts ""
 
 def pluck(hash, target)
@@ -67,3 +70,15 @@ records = [{name: "John", instrument: "guitar"},
 pluck(records, :name)
 puts ""
 pluck(records, :instrument)
+
+
+
+
+
+
+
+
+
+
+
+
